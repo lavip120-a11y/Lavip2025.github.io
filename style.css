@@ -2,15 +2,16 @@ body {
   padding: 10px;
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: #A3C4BC;
-  display:flex; /*parent to sections*/
+  background-color: #a3c4bc;
+  display: flex; /*parent to sections*/
   flex-direction: column;
 }
-header { /*parent element making its children flex items, h1*/
+header {
+  /*parent element making its children flex items, h1*/
   margin: 10px;
   height: 20vw;
   width: 90vw;
-  border: 5px solid #545E75;
+  border: 5px solid #545e75;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -19,59 +20,78 @@ header { /*parent element making its children flex items, h1*/
   background-size: cover;
 }
 h1 {
+  /*heading in header*/
   font-size: 4em;
   line-height: 1;
   letter-spacing: 5px;
-  }
-h2 {
-  color: rgb(22, 23, 22);
-  }
-main.content { /*this is the container for current and hisotry so this has to be the flexbox for those two items*/
-  width: 90%;
+}
+main.content {
+  /*this is the container for current and history so this has to be the flexbox for those two items*/
+  width: 95%;
   height: 50%;
   margin: 10px;
-  background-color: #C89F9C;
-  border: 5px solid #545E75;
+  background-color: #c89f9c;
+  border: 5px solid #545e75;
   border-radius: 5px;
   padding: 10px;
-  display:flex;
+  display: flex;
 }
-section#current { /*this is a child of main.content*/
-  width: 50%;
+section#current {
+  /*this is a child of main.content*/
+  width: 40%;
   padding: 10px;
   font-size: small;
   font-weight: lighter;
+}
+h2 { 
+  /*heading in section#current*/
+  color: rgb(22, 23, 22);
+  letter-spacing: 5px;
+  margin-left: 20px;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 p {
   margin: 5px;
   padding: 5px;
-  color: #545E75;
+  color: #545e75;
   font-size: large;
   font-weight: lighter;
 }
-section#history { /*this is the child of main.content*/
-  width: 50%;
+section#history {
+  /*this is the child of main.content*/
+  width: 60%;
   padding: 10px;
-  background-color:#A3C4BC;
-  border:#C89F9C solid 4px;
+  margin: 10px;
+  background-color: #a3c4bc;
+  border: #c89f9c solid 4px;
   border-radius: 5px;
   font-size: small;
   font-weight: lighter;
 }
-
-footer {
-  background-color: #545E75;
-  border: 2px solid #CBFF4D;
+h3 {
+  text-decoration: underline;
+  }
+footer { /*parent of div*/
+  width:95vw;
+  background-color: #545e75;
+  border: 2px solid #cbff4d;
   border-radius: 5px;
   line-height: 1.5;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-div {
-  color: #CBFF4D;
+div#contactdetails {
+  color: #cbff4d;
   font-size: 1em;
   margin: 5px;
   padding: 5px;
 }
-/*spread the contact details across the footer in boxes*/
+a { /*child of footer?*/
+  color: #cbff4d;
+  font-size: 1em;
+  margin: 5px;
+  padding: 5px;
+}
+
